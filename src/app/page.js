@@ -10,9 +10,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="flex flex-col justify-center items-center text-center">
-        <h1 class="text-6xl md:text-7xl lg:text-8xl p-24 pb-8">Welcome to Sorta</h1>
+        <h1 className="text-6xl md:text-7xl lg:text-8xl p-24 pb-8">Welcome to Sorta</h1>
         <p className='text-gray-500 mb-4'>Group your data quickly and effectively.</p>
         <div className='flex flex-row justify-center text-center'>
           <div className='feature-element'>
@@ -29,7 +28,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className='p-4 border border-white w-64 m-4 rounded-md hover:border-blue-700'>Get Started</button>
+          <Link className='p-4 border border-white w-64 m-4 rounded-md hover:border-blue-700' href="./sort">Get Started</Link>
         </div>
       </main>
       <div className="footer">
