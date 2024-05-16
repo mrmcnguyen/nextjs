@@ -108,14 +108,28 @@ body {
 }
 
 .feature-element{
+  display: flex;
+  flex-direction: column;
   width: 250px;
+  font-weight: lighter;
   height: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  border: 2px solid rgba(255, 255, 255, 0.13);
   margin: 20px;
+  text-align: center;
   border-radius: 25px;
   transition: border-color 0.3s ease;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 0px 10px 11px rgba(2, 107, 255, 0.2)
 }
 
 .feature-element:hover{
   border-color: #3a7bd57f;
+}
+
+.icon-container{
+  width: 30px;
+  margin: 20px;
+  justify-content: center;
 }

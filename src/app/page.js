@@ -1,6 +1,10 @@
 import Navbar from './navbar';
 import Sortbar from './sortbar'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faFileExport } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
 
 export default function Home() {
@@ -8,16 +12,20 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex flex-col justify-center items-center text-center">
-        <h1 class="text-6xl md:text-7xl lg:text-8xl p-24">Welcome to Sorta</h1>
+        <h1 class="text-6xl md:text-7xl lg:text-8xl p-24 pb-8">Welcome to Sorta</h1>
+        <p className='text-gray-500 mb-4'>Group your data quickly and effectively.</p>
         <div className='flex flex-row justify-center text-center'>
           <div className='feature-element'>
-
+          Sort your data into groups
+            <div className='icon-container'><FontAwesomeIcon className=""icon={faPeopleGroup} /></div>
           </div>
           <div className='feature-element'>
-              
+              Easy to use interface
+              <div className='icon-container'><FontAwesomeIcon className=""icon={faLaptop} /></div>
           </div>
           <div className='feature-element'>
-              
+              Simple export process
+              <div className='icon-container'><FontAwesomeIcon className=""icon={faFileExport} /></div>
           </div>
         </div>
         <div className="flex justify-center">
